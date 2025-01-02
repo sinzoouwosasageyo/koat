@@ -317,9 +317,21 @@ main label {
 main .tab_contents {
   background-color: rgba(52, 89, 46, 0.1333333333);
   border-radius: 0 0 15px 15px;
-  padding: 0 2.13rem;
+  padding: 0 2.5rem;
 }
 main #notice1 {
+  display: flex;
+  justify-content: space-between;
+}
+main #notice2 {
+  display: flex;
+  justify-content: space-between;
+}
+main #notice3 {
+  display: flex;
+  justify-content: space-between;
+}
+main #notice4 {
   display: flex;
   justify-content: space-between;
 }
@@ -371,21 +383,6 @@ main #tab3:checked + label {
 main #tab4:checked + label {
   background-color: rgba(52, 89, 46, 0.1333333333);
   font-weight: bold;
-}
-main #notice2 {
-  display: flex;
-  gap: 2.5rem;
-}
-main #notice2 ul:first-child li:last-child {
-  margin-top: 1.5625rem;
-}
-main #notice3 {
-  display: flex;
-  gap: 2.5rem;
-}
-main #notice4 {
-  display: flex;
-  gap: 2.5rem;
 }
 main #notice div {
   display: none;
@@ -661,15 +658,15 @@ footer .link_slide {
 }
 footer .footer_slide .swiper-button-prev {
   position: absolute;
-  bottom: 36.7%;
-  right: 19.01vw;
+  bottom: 40%;
+  right: 18%;
   z-index: 10;
   cursor: pointer;
 }
 footer .footer_slide .swiper-button-next {
   position: absolute;
-  bottom: 36.7%;
-  right: 16.93vw;
+  bottom: 40%;
+  right: 16%;
   z-index: 10;
   cursor: pointer;
 }
@@ -677,8 +674,8 @@ footer .footer_slide .button {
   width: 5.68%;
   height: 37%;
   border: 1px solid #34592E;
-  position: absolute;
-  bottom: 27%;
-  right: 15.42%;
   border-radius: 30px;
+  position: absolute;
+  bottom: 31.5%;
+  right: 14.4%;
 }/*# sourceMappingURL=style.css.map */

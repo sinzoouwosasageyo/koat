@@ -121,8 +121,11 @@ main {
     border-radius: 15px 15px 0 0;}
 
   .tab_contents {background-color: #34592E22; border-radius: 0 0 15px 15px;
-    padding: 0 2.13rem;}
+    padding: 0 2.5rem;}
   #notice1 {display: flex; justify-content: space-between;}
+  #notice2 {display: flex; justify-content: space-between;}
+  #notice3 {display: flex; justify-content: space-between;}
+  #notice4 {display: flex; justify-content: space-between;}
   #notice_thumb img {width: 15.56vw; padding: 3.875rem; background: #f5f5f5;
     border-radius: 10px; margin: 4.81rem 0 2.5rem 0;}
   #notice_title {color: #000; font-size: 1.13rem; font-family: $font2; font-weight: bold;
@@ -139,10 +142,6 @@ main {
   #tab3:checked+label {background-color: #34592E22; font-weight: bold;}
   #tab4:checked+label {background-color: #34592E22; font-weight: bold;}
 
-  #notice2 {display: flex; gap: 2.5rem;}
-  #notice2 ul:first-child li:last-child {margin-top: 1.5625rem;}
-  #notice3 {display: flex; gap: 2.5rem;}
-  #notice4 {display: flex; gap: 2.5rem;}
 
   #notice div {display: none;}
   #tab1:checked ~ .tab_contents #notice1,
@@ -224,10 +223,10 @@ footer {
   .link_swiper {width: 61.67vw; overflow: hidden; padding: 2.87vh 0 2.96vh 1.51vw;}
   .link_wrapper {display: flex; height: 100%; align-items: center; mix-blend-mode: multiply;}
   .link_slide {flex-shrink: 0;}
-  .footer_slide .swiper-button-prev {position: absolute; bottom: 36.7%; right: 19.01vw; z-index: 10;
-    cursor: pointer;}
-  .footer_slide .swiper-button-next {position: absolute; bottom: 36.7%; right: 16.93vw; z-index: 10;
-    cursor: pointer;}
-  .footer_slide .button {width: 5.68%; height: 37%; border: 1px solid #34592E; position: absolute;
-    bottom: 27%; right: 15.42%; border-radius: 30px;}
+  .footer_slide .swiper-button-prev {position: absolute; bottom: 40%; right: 18%;
+    z-index: 10; cursor: pointer;}
+  .footer_slide .swiper-button-next {position: absolute; bottom: 40%; right: 16%;
+    z-index: 10; cursor: pointer;}
+  .footer_slide .button {width: 5.68%; height: 37%; border: 1px solid #34592E;
+    border-radius: 30px; position: absolute; bottom: 31.5%; right: 14.4%;}
 }
