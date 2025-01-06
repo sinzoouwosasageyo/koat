@@ -59,17 +59,13 @@ header {
   #link.active #search_icon {display: none;}
   #link.active #close_icon {display: block;}
 
-  #sub {display: flex; position: absolute; top: 11.8vh;
+  #sub {display: flex; flex-direction: column; position: absolute; top: 11.8vh;
     transition: all .6s; opacity: 0; visibility: hidden;}
-  #sub > ul > li {padding-bottom: .31em;}
-  #sub ul:nth-child(2) {margin: 0 1.75em 0 2.75em;}
-  #sub ul:nth-child(4) {margin: 0 6.25em 0 5.375em;}
-  #sub ul:nth-child(6) {margin: 0 3.875em 0 3em;}
   #sub a {color: #333; font-family: $font2; font-size: .81rem; margin-bottom: .13em;
-    border-bottom: 2px solid transparent; transition: all .6s;}
+    border-bottom: 2px solid transparent; transition: all .4s;}
   #sub a:hover {color: #34592E; font-weight: 900; border-color: #34592E;}
-  .sub_background {width: 100%; height: 42vh; background-color: #ffffff99; z-index: -1;
-    position: absolute; top: -42vh; left: 0; transition: all .3s;}
+  .sub_background {width: 100%; height: 39vh; background-color: #ffffff99; z-index: -1;
+    position: absolute; top: -39vh; left: 0; transition: all .3s;}
   .top.scrolled {background: #fff;}
 }
 
@@ -232,4 +228,26 @@ footer {
     z-index: 10; cursor: pointer;}
   .footer_slide .button {width: 5.68%; height: 37%; border: 1px solid #34592E;
     border-radius: 30px; position: absolute; bottom: 31.5%; right: 14.4%;}
+}
+
+@media (max-width: 1742px){
+  main .bottom_menu {display: none;}
+}
+
+@media (max-width: 1354px){
+  header #gnb {display: none;}
+  header {height: 3em;}
+  header #logo {margin: .14em 0;}
+  header #search {display: none;}
+  header .top {padding: 0 3%;}
+}
+
+@media (max-width: 1024px){
+  main .swiper #text {display: none;}
+  main .notice_area label {width: 25%;}
+  main #logo_char {display: none;}
+}
+
+@media (max-width: 768px){
+  main .right_menu {display: none;}
 }
