@@ -43,7 +43,7 @@ header {
   #gnb a:hover {color: #34592E;}
   #gnb:hover .sub_background {top: 0;}
   #gnb:hover #sub {opacity: 1; visibility: visible;}
-  #search img {width: 1.5em; vertical-align: 10px; color: #333; cursor: pointer;
+  #search img {width: 1.5em; vertical-align: 6px; color: #333; cursor: pointer;
     transition: all .3s;}
   #search img:hover {transform: scale(1.5);}
   #close_icon {display: none;}
@@ -133,6 +133,7 @@ main {
   #notice_date {color: #333; font-size: 1rem; font-family: $font2;
     margin: 1.25rem 0 4.8125rem 0;}
   #notice1 ul:last-child li:last-child {margin-top: 1.5625rem;}
+  #notice2 ul:first-child li:last-child {margin-top: 1.5625rem;}
   #logo_char img {width: 13.8vw; height: 26.85vh; position: absolute;
     top: 18vh; right: 0;}
   #notice_title:hover {text-decoration: underline;}
