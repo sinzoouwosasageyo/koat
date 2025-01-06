@@ -73,7 +73,7 @@ header #gnb:hover #sub {
 }
 header #search img {
   width: 1.5em;
-  vertical-align: 10px;
+  vertical-align: 6px;
   color: #333;
   cursor: pointer;
   transition: all 0.3s;
@@ -356,6 +356,9 @@ main #notice_date {
   margin: 1.25rem 0 4.8125rem 0;
 }
 main #notice1 ul:last-child li:last-child {
+  margin-top: 1.5625rem;
+}
+main #notice2 ul:first-child li:last-child {
   margin-top: 1.5625rem;
 }
 main #logo_char img {
