@@ -612,6 +612,9 @@ footer #address {
   color: #666;
   line-height: 1.375rem;
 }
+footer #address span {
+  font-family: "Arial";
+}
 footer #links li:first-child img {
   width: 3.44rem;
   height: 2.44rem;

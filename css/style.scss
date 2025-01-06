@@ -211,6 +211,7 @@ footer {
   #bottom_info {padding: 2rem 0 1.9375rem 0; display: flex; justify-content: space-between;}
   #address {font-family: $font2; font-size: 1.125rem; font-weight: bold; color: #666;
     line-height: 1.375rem;}
+  #address span {font-family: 'Arial';}
   #links li:first-child img {width: 3.44rem; height: 2.44rem;}
   #links li:nth-child(2) img {width: 2.13rem; height: 2.44rem;}
   #links li:nth-child(3) img {width: 3.5rem; height: 2.44rem;}
