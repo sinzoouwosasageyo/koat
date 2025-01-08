@@ -4,6 +4,11 @@ var swiper = new Swiper(".swiper",{
   autoplay: {
     delay: 4000,
   },
+  pagination: {
+    el: '.pager',
+    clickable: true,
+    bulletActiveClass:"active",
+  },
 });
 
 var fixed = new EzenScrollClass(".top",{
@@ -27,8 +32,3 @@ var swiper2 = new Swiper(".link_swiper",{
     prevEl: ".swiper-button-prev",
   },
 });
-
-var puaseButton = document.getElementById("puase")
-      puaseButton.addEventListener("click", (event) => {
-        swiper.autoplay.pause()
-      })
