@@ -33,7 +33,7 @@ header {
   height: 100px;
 }
 header .top {
-  padding: 0 13.24%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +63,7 @@ header .top #gnb > ul > li:hover {
 }
 header .top #gnb > ul > li a {
   font-size: 1vw;
+  color: #e1e1e1;
 }
 header .top #gnb > ul > li #sub {
   display: flex;
@@ -107,15 +108,18 @@ header .top #gnb a {
   font-size: 1.25rem;
   font-weight: bold;
 }
-header .top #gnb a:hover {
-  color: #34592E;
-}
 header .top #gnb:hover .sub_background {
   top: 0;
 }
 header .top #gnb:hover #sub {
   opacity: 1;
   visibility: visible;
+}
+header .top #gnb:hover > ul > li a {
+  color: #333;
+}
+header .top #gnb:hover > ul > li a:hover {
+  color: #34592E;
 }
 header .top #search {
   width: 2%;
@@ -245,6 +249,9 @@ header .top .mobile_gnb #mg_area .mobile_close #mg_close img {
 header .top.scrolled {
   background: #fff;
 }
+header .top.scrolled #gnb > ul > li a {
+  color: #111;
+}
 
 main .swiper {
   width: 100%;
@@ -268,18 +275,17 @@ main .swiper .swiper-wrapper .swiper-slide img {
 main .swiper .swiper-wrapper .swiper-slide #text {
   position: absolute;
   top: 28%;
-  left: 13.33%;
+  left: 11.2%;
   padding: 2%;
-  border-radius: 15px;
-  background: rgba(177, 177, 177, 0.6666666667);
 }
 main .swiper .swiper-wrapper .swiper-slide #text span {
   display: inline-block;
 }
 main .swiper .swiper-wrapper .swiper-slide #text #slide_title {
-  font-family: "ONE-Mobile-Title";
-  font-size: 3vw;
+  font-family: "ONE-Mobile-Regular";
+  font-size: 2vw;
   color: #fff;
+  font-weight: 600;
   padding-bottom: 3%;
   transform: translateX(10%);
   transition: all 0.2s ease-in-out;
@@ -290,6 +296,7 @@ main .swiper .swiper-wrapper .swiper-slide #text #slide_content {
   font-family: "ONE-Mobile-Regular";
   font-size: 2vw;
   color: #fff;
+  font-weight: 600;
   transform: translateX(10%);
   transition: all 0.2s ease-in-out;
   opacity: 0;
@@ -307,34 +314,10 @@ main .swiper .swiper-wrapper .swiper-slide.swiper-slide-active #text #slide_cont
   visibility: visible;
   transition-delay: 0.3s;
 }
-main .swiper .right_menu {
-  position: absolute;
-  top: 30%;
-  right: 10%;
-}
-main .swiper .right_menu ul {
-  display: flex;
-  flex-direction: column;
-  gap: 0.63em;
-}
-main .swiper .right_menu ul li {
-  width: 50px;
-  background: #fff;
-  border: 2px solid #000;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-}
-main .swiper .right_menu ul li img {
-  width: 100%;
-  margin: 10%;
-}
-main .swiper .right_menu ul li:hover {
-  background: #34592E;
-}
 main .swiper .pager {
   position: absolute;
   z-index: 100;
-  bottom: 10%;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -352,8 +335,8 @@ main .swiper .pager span.active {
 }
 main .swiper .bottom_menu {
   position: absolute;
-  bottom: 0%;
-  right: 13.54%;
+  bottom: 10%;
+  left: 13%;
   width: 35%;
 }
 main .swiper .bottom_menu ul {
@@ -362,7 +345,7 @@ main .swiper .bottom_menu ul {
 }
 main .swiper .bottom_menu ul li {
   padding: 1.3% 4%;
-  background: #d9d9d9;
+  background: #fff;
   border-radius: 10px;
   border: 3px solid transparent;
   transition: all 0.2s ease-in-out;
@@ -416,7 +399,10 @@ main .notice_area label {
 main .notice_area label:hover span {
   display: inline-block;
   transition: all 0.2s ease-in-out;
-  transform: translateY(-3px) scale(1.1);
+  cursor: pointer;
+}
+main .notice_area label:hover span:hover {
+  font-weight: 900;
 }
 main .notice_area #tab1:checked + label {
   background-color: rgba(52, 89, 46, 0.1333333333);
@@ -488,10 +474,10 @@ main .notice_area .tab_contents #notice #notice_date {
   margin: 1.25rem 0 4.8125rem 0;
 }
 main .notice_area .tab_contents #logo_char img {
-  width: 13.8vw;
+  width: 6vw;
   position: absolute;
-  top: 7vh;
-  right: 0;
+  top: 10vh;
+  left: 24vw;
 }
 main .work {
   padding: 5.49% 13.54%;
@@ -506,7 +492,7 @@ main .work #work_title h2 {
 main .work #work_title h3 {
   font-size: 1.86rem;
   font-family: "ONE-Mobile-Regular";
-  margin: 3.5% 0;
+  margin: 3.5% 0 1.5%;
 }
 main .work #work_title span {
   font-size: 1.36rem;
@@ -633,6 +619,7 @@ main .sitelink #link_area ul li a {
   font-family: "ONE-Mobile-Regular";
   font-size: 1vw;
   font-weight: bold;
+  text-align: center;
 }
 main .sitelink #link_area ul li a img {
   background: transparent;
@@ -679,7 +666,7 @@ main .media #video_area::before {
   height: 55%;
   border: 1px solid #d9d9d9;
   position: absolute;
-  top: 30.6%;
+  top: 30.8%;
   left: 17.4%;
   border-radius: 30px;
   z-index: -1;
@@ -803,9 +790,9 @@ footer .bottom #bottom_info {
 footer .bottom #bottom_info #info1 #address {
   font-family: "ONE-Mobile-Regular";
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #666;
-  line-height: 1.3;
+  line-height: 1.6;
 }
 footer .bottom #bottom_info #info1 #address span {
   font-family: "Arial";
@@ -867,7 +854,7 @@ footer .footer_slide .button {
   padding: 0.3%;
   border-radius: 30px;
   position: absolute;
-  bottom: 24%;
+  bottom: 24.2%;
   right: 14.4%;
   display: flex;
   justify-content: space-around;
@@ -887,7 +874,7 @@ footer .footer_slide .button .swiper-button-next {
     width: 15%;
   }
   header .top #logo a img {
-    width: 100%;
+    width: 90%;
   }
   header .top #gnb {
     display: none;
@@ -905,17 +892,17 @@ footer .footer_slide .button .swiper-button-next {
     height: 100%;
   }
   main .swiper .swiper-wrapper .swiper-slide #text {
-    left: 8%;
+    left: 11.6%;
     padding: 2% 2%;
   }
   main .swiper .swiper-wrapper .swiper-slide #text #slide_title {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   main .swiper .swiper-wrapper .swiper-slide #text #slide_content {
-    font-size: 2.4vw;
+    font-size: 3.5vw;
   }
   main .swiper .pager {
-    top: 85%;
+    bottom: 2%;
     height: 4%;
   }
   main .swiper .pager span {
@@ -927,7 +914,7 @@ footer .footer_slide .button .swiper-button-next {
   }
   main .swiper .bottom_menu ul li a {
     font-size: 1.8vw;
-    line-height: 2;
+    line-height: 1.5;
   }
   main .swiper .right_menu {
     top: 25%;
@@ -1003,12 +990,11 @@ footer .footer_slide .button .swiper-button-next {
     font-size: 2.1vw;
     margin-bottom: 5%;
   }
-  main .notice_area .tab_contents #notice #logo_char img {
+  main .notice_area .tab_contents #logo_char img {
     width: 12vw;
-    height: 13vh;
     position: absolute;
-    top: 3vh;
-    right: 2vw;
+    top: 4vh;
+    left: 24vw;
   }
   main .work {
     padding: 4rem 1rem;
@@ -1257,7 +1243,7 @@ footer .footer_slide .button .swiper-button-next {
 }
 @media (max-width: 430px) {
   header .top #logo {
-    width: 20%;
+    width: 15%;
   }
   header .top .mobile_btn {
     width: 8%;
@@ -1294,6 +1280,7 @@ footer .footer_slide .button .swiper-button-next {
   main .swiper .bottom_menu ul li a {
     font-size: 2.2vw;
     margin: 0;
+    line-height: 2.5;
   }
   main .notice_area {
     padding: 2rem 1rem;
@@ -1357,12 +1344,11 @@ footer .footer_slide .button .swiper-button-next {
     font-size: 3.5vw;
     margin-bottom: 5%;
   }
-  main .notice_area .tab_contents #notice #logo_char img {
+  main .notice_area .tab_contents #logo_char img {
     width: 12vw;
-    height: 13vh;
     position: absolute;
     top: 3vh;
-    right: 2vw;
+    left: 30vw;
   }
   main .work {
     padding: 2rem 1rem;
